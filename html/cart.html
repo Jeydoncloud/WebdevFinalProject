@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <head>
+                    <script src="../javascript/jQuery.js" type="text/javascript"></script>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <title>MariTaste Website</title>
+                    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+                    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+                    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+                    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+                    <link rel="stylesheet" href="../css/cart.css">
+                
+                    <script src="../javascript/menu.js " async></script>
+                </head>
+    </head>
+    <body>
+        <section class="header">
+        <a href="#" class="logo"><img src="../images/logo.png" alt="logo"></a>
+        <span>MariTaste</span>
+        <nav class="navbar">
+
+            <a href="../html/index.html">Home</a>
+            <a href="../html/about.html" >About</a>
+            <a href="../html/menu.html">Menu</a>
+            <a href="../html/review.html">Reviews</a>
+
+        </nav>
+
+        <a href="../html/cart.html" id="ifactive"><i class="las la-shopping-cart ifactive" id="cart"></i></i></a>
+        <div class="dropdown" onclick="myFunction()"><i class="fa-solid fa-user" class="dropbtn" id="profile"></i>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Login</a>
+                <a href="#">Signup</a>
+                <a href="../html/admin_login.html">Admin
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </section>
+
+    <section class="container content-section">
+        <center>
+        <div id="empty">
+            <img src="../images/cartlogo.PNG" alt="">
+            <h5>Your shopping cart is empty</h5>
+            <a href="index.html"><button type="button" class="browsebtn">Browse Now</button></a>
+        </div>
+        </center>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total:</strong>
+                    <span class="cart-total-price">₱0</span>
+                </div>
+                <center>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                </center>   
+    </section>
+
+    <section class="maylike">
+        <div class="title-container">
+            <h1>You may also like</h1>
+            <a href="" id="View-btn">View all<i class="arrow right"></i></a>
+        </div>
+    </section>
+
+
+    <section class="container content-section">
+        <div class="shop-items">
+               
+            <div class="shop-item">
+                <img class="shop-item-image" src="../images/Mongolian Turkey.jpg" alt=" " width="200px;">
+                <span class="shop-item-title">Mongolian Turkey</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱250.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="../images/Crispy Orange Beef.jpg" alt=" " width="200px;">
+                <span class="shop-item-title">Crispy Orange Beef</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱280.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="../images/Pastelón.jpg" alt=" " width="200px;">
+                <span class="shop-item-title">Pastelón</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱260.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="../images/Bibimbap with Zucchini, Mushrooms, and Carrot.jpg " alt=" " width="200px;">
+                <span class="shop-item-title">Bibimbap</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱270.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+            <div class="shop-item">
+                    <img class="shop-item-image" src="../images/Hot Cheetos with Nacho Cheese.jpg " alt="Hot Cheetos with Nacho Cheese" width="200px;">
+                    <span class="shop-item-title">Hot Cheetos with Nacho Cheese</span>
+                        <div class="stars ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <div class="shop-item-details">
+                        <span class="shop-item-price">₱200.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="../images/Dynamite Lumpia.jpg " alt="Dynamite Lumpia" width="200px;">
+                    <span class="shop-item-title">Dynamite Lumpia</span>
+                        <div class="stars ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <div class="shop-item-details">
+                        <span class="shop-item-price">₱150.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                         
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="../images/empada.jpg" alt="empada" width="200px;">
+                    <span class="shop-item-title">Empanada</span>
+                        <div class="stars ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <div class="shop-item-details">
+                        <span class="shop-item-price">₱170.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                         
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="../images/ISAW BBQ.jpg " alt="ISAW BBQ" width="200px;">
+                    <span class="shop-item-title">Isaw BBQ</span>
+                        <div class="stars ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <div class="shop-item-details">
+                        <span class="shop-item-price">₱220.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                         
+                    </div>
+                </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Cookie Dough ice Cream With Blueberry Lemon Coconut Whip.jpg " alt="Cookie Dough ice Cream With Blueberry Lemon Coconut Whip " width="200px;">
+                <span class="shop-item-title" style="font-size: 18px">Cookie Dough Ice Cream With Blueberry Lemon Coconut Whip</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱220.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Raspberry Cheesecake Mousse.jpg " alt="Raspberry Cheesecake Mousse " width="200px;">
+                <span class="shop-item-title" style="font-size: 18px">Raspberry Cheesecake Mousse</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱350.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Marshmallow Mousse.jpg" alt="Marshmallow Mousse ">
+                <span class="shop-item-title">Marshmallow Mousse</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱340.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Chocolate Raspberry Mini Crepe Cakes.jpg" alt="Chocolate Raspberry Mini Crepe Cakes ">
+                <span class="shop-item-title">Chocolate Raspberry Mini Crepe Cakes</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱330.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Lemonade Slushie.jpg " alt="Lemonade Slushie" width="200px;">
+                <span class="shop-item-title">Lemonade Slushie</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱250.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/grapefruit cucumber gin cooler.jpg " alt="grapefruit cucumber gin cooler" width="200px;">
+                <span class="shop-item-title" style="font-size: 18px">Grapefruit Cucumber Gin Cooler</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱230.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Virgin Piña Colada.jpg " alt="Virgin Piña Colada" width="200px;">
+                <span class="shop-item-title">Virgin Piña Colada</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱280.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+            </div>
+                        <div class="shop-item">
+                <img class="shop-item-image" src="../images/Strawberry Detox Water.jpg " alt="Strawberry Detox Water" width="200px;">
+                <span class="shop-item-title" >Strawberry Detox Water</span>
+                    <div class="stars ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                    </div>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">₱190.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                                     
+                </div>
+                
+            </div>  
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <section class="footer">
+            <div class="foot">
+                <a href="" id="btp">back to top</a><br>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <div class="navv">
+                    <a href="../html/index.html">Home</a>
+                    <a href="../html/about.html">About</a>
+                    <a href="../html/menu.html">Menu</a>
+                    <a href="../html/review.html">Reviews</a>
+                    <a href="#login">Login / Signup</a>
+                </div>
+
+            </div>
+            <a href="https://storyset.com/people" style="color:#FFFBE9;">Illustrations by Storyset</a>
+            <div class="quote">
+                Nothing can bring people like food. Bon Appetit!
+            </div>
+            <div class="copyright">&copy;Copyrights 2022. All rights reserved.</div>
+        </section>
+
+    </body>
+</html>
